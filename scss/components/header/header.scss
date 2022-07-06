@@ -1,13 +1,17 @@
 .header {
+  height: 100vh;
   &__banner-wrapper {
     margin-top: 58px;
   }
   &__banner-content {
     justify-content: space-between !important;
+    padding-bottom: 40px;
   }
   &__first-side,
   &__second-side {
+    /*
     width: 50%;
+     */
   }
   &__banner-title {
     margin-top: 20px;
@@ -26,12 +30,38 @@
     margin-top: 10px;
     color: $text-color-second;
     font-size: $font-regular-text;
-    max-width: 460px;
+    max-width: 465px;
   }
   &__control-collecting {
     margin-top: 90px;
   }
   &__collecting {
     padding: 15px 45px !important;
+  }
+
+
+  &__wrapper-picture {
+    background-color: #151515;
+    border-radius: 25px;
+    position: relative;
+    &:before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: calc(100% + 8px);
+      height: calc(100% + 8px);
+      transform: translate(-4px, -4px);
+      background: linear-gradient(60deg, #5ff281, #5f86f2, #a65ff2, #f25fd0, #f25f61, #f2cb5f) 0 50%;
+      background-size: 300% 300%;
+      animation:  gradient-animation 5.5s alternate infinite;
+      border-radius: 25px;
+      z-index: -1;
+    }
+    @keyframes gradient-animation {
+      50%{
+        background-position: 100% 50%;
+      }
+    }
   }
 }
