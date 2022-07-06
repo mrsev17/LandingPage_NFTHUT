@@ -164,6 +164,41 @@ body {
   font-style: normal;
   font-display: swap;
 }
+.header__banner-wrapper {
+  margin-top: 58px;
+}
+.header__banner-content {
+  justify-content: space-between !important;
+}
+.header__first-side, .header__second-side {
+  width: 50%;
+}
+.header__banner-title {
+  margin-top: 20px;
+  line-height: 135px;
+  max-width: 545px;
+  font-size: 90px;
+  font-weight: 700;
+  color: #DDDCF1;
+}
+.header__banner-title span {
+  background: linear-gradient(to right, #631BCF 15%, #CF0808 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.header__description {
+  margin-top: 10px;
+  color: #8D89A1;
+  font-size: 20px;
+  max-width: 460px;
+}
+.header__control-collecting {
+  margin-top: 90px;
+}
+.header__collecting {
+  padding: 15px 45px !important;
+}
+
 @media (max-width: 1065px) {
   .header .navbar-nav {
     gap: 10px;

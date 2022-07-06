@@ -1,3 +1,37 @@
 .header {
-
+  &__banner-wrapper {
+    margin-top: 58px;
+  }
+  &__banner-content {
+    justify-content: space-between !important;
+  }
+  &__first-side,
+  &__second-side {
+    width: 50%;
+  }
+  &__banner-title {
+    margin-top: 20px;
+    line-height: 135px;
+    max-width: 545px;
+    font-size: 90px;
+    font-weight: $font-weight-title;
+    color: $title-color;
+    span {
+      background: linear-gradient(to right, #631BCF 15%, #CF0808 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+  }
+  &__description {
+    margin-top: 10px;
+    color: $text-color-second;
+    font-size: $font-regular-text;
+    max-width: 460px;
+  }
+  &__control-collecting {
+    margin-top: 90px;
+  }
+  &__collecting {
+    padding: 15px 45px !important;
+  }
 }
