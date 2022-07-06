@@ -84,6 +84,7 @@ select {
 }
 body {
   font-family: "Poppins", sans-serif;
+  background-color: #141229 !important;
 }
 
 .btn {
@@ -106,6 +107,11 @@ body {
   padding: 21px 23px 22px 23px !important;
   margin-top: 102px;
   border-radius: 15px;
+  transition: box-shadow 2s ease-out 0.3s;
+}
+.navbar:hover {
+  transition: 0.3s;
+  box-shadow: 5px 5px 9px 0 rgba(167, 59, 204, 0.83);
 }
 
 .navbar-nav {

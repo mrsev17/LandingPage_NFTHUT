@@ -2,6 +2,7 @@
 
 body {
   font-family: "Poppins", sans-serif;
+  background-color: $background-color !important;
 }
 
 .btn {
@@ -23,7 +24,13 @@ body {
   padding: 21px 23px 22px 23px !important;
   margin-top: 102px;
   border-radius: 15px;
+  transition: box-shadow 2s ease-out .3s;
+  &:hover {
+    transition: .3s;
+    box-shadow: 5px 5px 9px 0 rgba(167,59,204,0.83);
+  }
 }
+
 .navbar-nav {
   margin: 0 auto !important;
   gap: 63px;
