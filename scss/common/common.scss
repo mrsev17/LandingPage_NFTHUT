@@ -1,0 +1,51 @@
+@import "variables.scss";
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+.btn {
+  font-size: $font-regular-text !important;
+  border: 1px solid $accent-color !important;
+  border-radius: 12px !important;
+  background-color: $accent-color !important;
+  color: $title-color !important;
+  padding: .375rem 1.75rem !important;
+  &:hover {
+    border: 1px solid $title-color !important;
+    background-color: $title-color !important;
+    color: #000000 !important;
+    transition: $regular-transition !important;
+  }
+}
+.navbar {
+  background-color: $header-panel-color;
+  padding: 21px 23px 22px 23px !important;
+  margin-top: 102px;
+  border-radius: 15px;
+}
+.navbar-nav {
+  margin: 0 auto !important;
+  gap: 63px;
+}
+.nav-link {
+  color: $title-color !important;
+  font-weight: $font-weight-small !important;
+  font-size: $font-regular-text;
+  border: 1px solid transparent;
+  &:hover {
+    color: $accent-color !important;
+    transition: $regular-transition;
+    border-bottom: 1px solid $accent-color;
+  }
+}
+.navbar-toggler {
+  background: linear-gradient(106deg, rgba(77,11,167,1) 2%, rgba(76,80,223,1) 44%, rgba(184,8,224,1) 92%);
+  border: none !important;
+  &:focus {
+    outline: none !important;
+  }
+}
+.navbar-toggler-icon {
+  background-image: url("../assets/icons/blockchain_icon.svg") !important;
+}
