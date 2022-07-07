@@ -164,9 +164,6 @@ body {
   font-style: normal;
   font-display: swap;
 }
-.header {
-  height: 100vh;
-}
 .header__banner-wrapper {
   margin-top: 58px;
 }
@@ -279,6 +276,63 @@ body {
   .header__wrapper-picture:before {
     border-radius: 20px;
   }
+}
+.artwork {
+  /* Animation for cards */
+}
+.artwork__title-control {
+  display: flex;
+  justify-content: space-between;
+}
+.artwork__title {
+  color: #DDDCF1;
+  font-size: 40px;
+}
+.artwork__control-case span {
+  color: #DDDCF1;
+  font-size: 16px;
+}
+.artwork__cards-panel {
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-between;
+}
+.artwork__flip-card {
+  background-color: transparent;
+  width: 300px;
+  height: 200px;
+  border: 1px solid transparent;
+  perspective: 1000px;
+}
+.artwork__flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 1.2s;
+  transform-style: preserve-3d;
+}
+.artwork__flip-card:hover .artwork__flip-card-inner {
+  transform: rotateY(180deg);
+}
+.artwork__flip-card-front > img {
+  border-radius: 12px;
+}
+.artwork__flip-card-front, .artwork__flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+.artwork__flip-card-front {
+  background-color: transparent;
+  color: black;
+}
+.artwork__flip-card-back {
+  background-color: transparent;
+  color: transparent;
+  transform: rotateY(180deg);
 }
 
 /*# sourceMappingURL=stylesheet.css.map */
