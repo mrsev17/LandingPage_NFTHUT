@@ -199,7 +199,7 @@ body {
   max-width: 465px;
 }
 .header__control-collecting {
-  margin-top: 90px;
+  margin-top: 70px;
 }
 .header__collecting {
   padding: 15px 45px !important;
@@ -263,6 +263,21 @@ body {
   }
   .header__second-side {
     margin-top: 60px;
+  }
+}
+@media (max-width: 580px) {
+  .header__banner-title {
+    line-height: 90px;
+    max-width: 520px;
+  }
+  .header__description {
+    margin-top: 20px;
+  }
+  .header__second-side {
+    padding: 0 15px;
+  }
+  .header__wrapper-picture:before {
+    border-radius: 20px;
   }
 }
 

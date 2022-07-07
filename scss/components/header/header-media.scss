@@ -38,3 +38,22 @@
     }
   }
 }
+@media (max-width: 580px) {
+  .header {
+    &__banner-title {
+      line-height: 90px;
+      max-width: 520px;
+    }
+    &__description {
+      margin-top: 20px;
+    }
+    &__second-side {
+      padding: 0 15px;
+    }
+    &__wrapper-picture {
+      &:before {
+        border-radius: 20px;
+      }
+    }
+  }
+}
