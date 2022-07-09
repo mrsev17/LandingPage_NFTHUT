@@ -26,6 +26,7 @@
     height: 200px;
     border: 1px solid transparent;
     perspective: 1000px;
+    min-width: 24%;
   }
 
 
@@ -37,8 +38,6 @@
     transition: transform 1.2s;
     transform-style: preserve-3d;
   }
-
-
 
   &__flip-card:hover &__flip-card-inner {
     transform: rotateY(180deg);
@@ -66,5 +65,22 @@
     background-color: transparent;
     color: transparent;
     transform: rotateY(180deg);
+  }
+  &__control-case {
+    gap: 10px;
+    margin-right: 20px ;
+    p {
+      font-size: $font-secondary-text;
+      color: $text-color-second;
+      margin-top: 12px;
+    }
+    span {
+      font-size: 30px;
+      &:hover {
+        transition: $regular-transition;
+        color: $accent-color;
+        cursor: pointer;
+      }
+    }
   }
 }

@@ -1,0 +1,26 @@
+@media (max-width: 992px) {
+  .artwork {
+    &__title-control {
+      flex-direction: column;
+      align-items: center;
+    }
+    &__title {
+      text-align: center;
+    }
+    &__control-case {
+      margin: 0;
+    }
+    &__cards-panel {
+      flex-direction: column;
+      align-items: center;
+      gap: 150px;
+    }
+    &__flip-card {
+      width: 100%;
+      margin: 0 auto;
+      img {
+        display: inline-block !important;
+      }
+    }
+  }
+}
