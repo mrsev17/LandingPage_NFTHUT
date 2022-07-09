@@ -280,8 +280,19 @@ body {
 .artwork {
   /* Animation for cards */
 }
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 .artwork__title-control {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
 }
 .artwork__title {
@@ -294,7 +305,11 @@ body {
 }
 .artwork__cards-panel {
   margin-top: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
 }
 .artwork__flip-card {
@@ -302,6 +317,7 @@ body {
   width: 300px;
   height: 200px;
   border: 1px solid transparent;
+  -webkit-perspective: 1000px;
   perspective: 1000px;
   min-width: 24%;
 }
@@ -310,10 +326,16 @@ body {
   width: 100%;
   height: 100%;
   text-align: center;
+  -webkit-transition: -webkit-transform 1.2s;
+  transition: -webkit-transform 1.2s;
+  -o-transition: transform 1.2s;
   transition: transform 1.2s;
+  transition: transform 1.2s, -webkit-transform 1.2s;
+  -webkit-transform-style: preserve-3d;
   transform-style: preserve-3d;
 }
 .artwork__flip-card:hover .artwork__flip-card-inner {
+  -webkit-transform: rotateY(180deg);
   transform: rotateY(180deg);
 }
 .artwork__flip-card-front > img {
@@ -333,6 +355,7 @@ body {
 .artwork__flip-card-back {
   background-color: transparent;
   color: transparent;
+  -webkit-transform: rotateY(180deg);
   transform: rotateY(180deg);
 }
 .artwork__control-case {
@@ -348,6 +371,8 @@ body {
   font-size: 30px;
 }
 .artwork__control-case span:hover {
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
   transition: 0.5s;
   color: #A73BCC;
   cursor: pointer;
