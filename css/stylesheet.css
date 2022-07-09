@@ -537,6 +537,7 @@ body {
   margin-top: 50px;
 }
 .category .card {
+  margin: 0 auto;
   border-radius: 12px;
   border: none;
   width: 24rem;
