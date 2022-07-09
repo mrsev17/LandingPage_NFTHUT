@@ -391,9 +391,10 @@ body {
     margin: 0;
   }
   .artwork__cards-panel {
-    flex-direction: column;
     align-items: center;
-    gap: 40px;
+    gap: 70px;
+    flex-wrap: wrap;
+    justify-content: space-around;
   }
   .artwork__flip-card {
     width: 100%;
@@ -401,6 +402,117 @@ body {
   }
   .artwork__flip-card img {
     display: inline-block !important;
+  }
+}
+.creator {
+  margin-top: 150px;
+}
+.creator__title-control {
+  display: flex;
+  justify-content: space-between;
+}
+.creator__title {
+  color: #DDDCF1;
+  font-size: 40px;
+}
+.creator__control-case span {
+  color: #DDDCF1;
+  font-size: 16px;
+}
+.creator__cards-panel {
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-between;
+}
+.creator__control-case {
+  gap: 10px;
+  margin-right: 20px;
+}
+.creator__control-case p {
+  font-size: 16px;
+  color: #8D89A1;
+  margin-top: 12px;
+}
+.creator__control-case span {
+  font-size: 30px;
+}
+.creator__control-case span:hover {
+  transition: 0.5s;
+  color: #A73BCC;
+  cursor: pointer;
+}
+.creator__wrapper-cards {
+  margin-top: 60px;
+  display: flex;
+  justify-content: space-between;
+}
+.creator .card {
+  width: 22%;
+  background-color: #2A263E;
+  border-radius: 12px;
+}
+.creator .card:hover {
+  transition: 1s;
+  background-color: #DDDCF1;
+}
+.creator .card:hover img {
+  transform: scale(1.15);
+  transition: 1s;
+}
+.creator .card:hover h6 {
+  color: #2A263E;
+}
+.creator .card-subtitle {
+  margin-top: 20px;
+  font-size: 20px;
+  font-weight: 600;
+  color: #DDDCF1;
+}
+.creator__wrapper-down-card {
+  display: flex;
+  justify-content: space-between;
+}
+.creator .card-link {
+  color: #8D89A1;
+  font-weight: 500 !important;
+  font-size: 600 !important;
+}
+.creator__picture > img {
+  margin: 15px auto 0;
+}
+
+@media (max-width: 992px) {
+  .creator__title-control {
+    flex-direction: column;
+    align-items: center;
+  }
+  .creator__title {
+    text-align: center;
+  }
+  .creator__control-case {
+    margin: 0;
+  }
+  .creator__wrapper-cards {
+    align-items: center;
+    gap: 20px;
+    justify-content: space-around;
+  }
+}
+@media (max-width: 830px) {
+  .creator__wrapper-cards {
+    flex-direction: column;
+    align-items: center;
+  }
+  .creator .card {
+    width: 60%;
+  }
+}
+@media (max-width: 400px) {
+  .creator {
+    margin-top: 40px;
+  }
+  .creator .card {
+    width: 80%;
   }
 }
 

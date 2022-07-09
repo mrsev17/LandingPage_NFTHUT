@@ -1,0 +1,38 @@
+@media (max-width: 992px) {
+  .creator {
+    &__title-control {
+      flex-direction: column;
+      align-items: center;
+    }
+    &__title {
+      text-align: center;
+    }
+    &__control-case {
+      margin: 0;
+    }
+    &__wrapper-cards {
+      align-items: center;
+      gap: 20px;
+      justify-content: space-around;
+    }
+  }
+}
+@media (max-width: 830px) {
+  .creator {
+    &__wrapper-cards {
+      flex-direction: column;
+      align-items: center;
+    }
+    .card {
+      width: 60%;
+    }
+  }
+}
+@media (max-width: 400px) {
+  .creator {
+    margin-top: 40px;
+    .card {
+      width: 80%;
+    }
+  }
+}

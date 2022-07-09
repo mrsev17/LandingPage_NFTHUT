@@ -1,0 +1,79 @@
+.creator {
+  margin-top: 150px;
+  &__title-control {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__title {
+    color: $title-color;
+    font-size: $font-regular-title;
+  }
+  &__control-case {
+    span {
+      color: $title-color;
+      font-size: $font-secondary-text;
+    }
+  }
+  &__cards-panel {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+  }
+  &__control-case {
+    gap: 10px;
+    margin-right: 20px ;
+    p {
+      font-size: $font-secondary-text;
+      color: $text-color-second;
+      margin-top: 12px;
+    }
+    span {
+      font-size: 30px;
+      &:hover {
+        transition: $regular-transition;
+        color: $accent-color;
+        cursor: pointer;
+      }
+    }
+  }
+  &__wrapper-cards {
+    margin-top: 60px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .card {
+    width: 22%;
+    background-color: #2A263E;
+    border-radius: 12px;
+    &:hover {
+      transition: 1s;
+      background-color: $title-color;
+      img {
+        transform: scale(1.15);
+        transition: 1s;
+      }
+      h6 {
+        color: #2A263E;
+      }
+    }
+  }
+  .card-subtitle {
+    margin-top: 20px;
+    font-size: $font-regular-text;
+    font-weight: $font-weight-text;
+    color: $title-color;
+  }
+  &__wrapper-down-card {
+    display: flex;
+    justify-content: space-between;
+  }
+  .card-link {
+    color: $text-color-second;
+    font-weight: $font-weight-small !important;
+    font-size: $font-weight-text !important;
+  }
+  &__picture > img {
+    margin: 15px auto 0;
+  }
+
+}
