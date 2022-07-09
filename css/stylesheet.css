@@ -141,6 +141,7 @@ body {
 
 .navbar-toggler-icon {
   background-image: url("../assets/icons/blockchain_icon.svg") !important;
+  background-size: 90% !important;
 }
 
 @font-face {
