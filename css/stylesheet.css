@@ -280,6 +280,7 @@ body {
 .artwork {
   /* Card hover */
   /* Not important for the zoom effect. */
+  /* Border cards */
 }
 .artwork__title-control {
   display: flex;
@@ -317,20 +318,14 @@ body {
 }
 .artwork .card {
   max-width: 284px;
-  /* Card width. */
   height: 305px;
   background-color: #333;
   border-radius: 12px;
   outline: 1px solid rgba(255, 255, 255, 0.5);
-  /* The outline works the same way as a border with added perks. */
   outline-offset: -8px;
-  /* Negative offset to bring in the outline border. */
   box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1);
   position: relative;
-  /* Relative position because we are using position absolute on elements inside the card.
-  This will make sure the said elements do not float outside of the card. Important for the zoom effect.*/
   overflow: hidden;
-  /* Since we are scaling the image on hover, we have to hide the overflow. Important for the zoom effect.*/
 }
 .artwork .card-image {
   /* All the following styles are important for the zoom effect. */
@@ -359,6 +354,30 @@ body {
   font-size: 20px;
   text-shadow: 0 0 1px rgba(0, 0, 0, 0.5);
 }
+.artwork__wrapper-cards {
+  background-color: #151515;
+  border-radius: 12px;
+  position: relative;
+}
+.artwork__wrapper-cards:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: calc(100% + 8px);
+  height: calc(100% + 8px);
+  transform: translate(-4px, -4px);
+  background: linear-gradient(60deg, #5ff281, #5f86f2, #a65ff2, #f25fd0, #f25f61, #f2cb5f) 0 75%;
+  background-size: 300% 300%;
+  animation: gradient-animation 5.5s alternate infinite;
+  border-radius: 12px;
+  z-index: -1;
+}
+@keyframes gradient-animation {
+  50% {
+    background-position: 100% 50%;
+  }
+}
 
 @media (max-width: 992px) {
   .artwork__title-control {
@@ -374,7 +393,7 @@ body {
   .artwork__cards-panel {
     flex-direction: column;
     align-items: center;
-    gap: 150px;
+    gap: 40px;
   }
   .artwork__flip-card {
     width: 100%;
