@@ -65,6 +65,13 @@
   .card:hover .card-image{
     transform: scale(1.25); /* When the card is hovered, the image inside of it is scaled up. Important for the zoom effect. */
   }
+  .card {
+    transition: box-shadow 2s ease-out 0.7s;
+    &:hover {
+      box-shadow: 5px 5px 15px 5px #370D80;
+      transition: 1s;
+    }
+  }
   /* Not important for the zoom effect. */
   .card-title{
     position: absolute;

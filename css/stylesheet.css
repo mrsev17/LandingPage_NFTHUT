@@ -347,6 +347,13 @@ body {
   transform: scale(1.25);
   /* When the card is hovered, the image inside of it is scaled up. Important for the zoom effect. */
 }
+.artwork .card {
+  transition: box-shadow 2s ease-out 0.7s;
+}
+.artwork .card:hover {
+  box-shadow: 5px 5px 15px 5px #370D80;
+  transition: 1s;
+}
 .artwork .card-title {
   position: absolute;
   right: 15px;
@@ -406,6 +413,7 @@ body {
 }
 .creator {
   margin-top: 150px;
+  padding-bottom: 30px;
 }
 .creator__title-control {
   display: flex;
@@ -450,10 +458,12 @@ body {
   width: 22%;
   background-color: #2A263E;
   border-radius: 12px;
+  transition: box-shadow 2s ease-out 0.3s;
 }
 .creator .card:hover {
   transition: 1s;
   background-color: #DDDCF1;
+  box-shadow: 5px 5px 15px 5px #5268FF;
 }
 .creator .card:hover img {
   transform: scale(1.15);
