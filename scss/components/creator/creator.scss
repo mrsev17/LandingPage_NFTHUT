@@ -41,6 +41,9 @@
     display: flex;
     justify-content: space-between;
   }
+  img {
+    transition: transform 2s ease-out 0.5s;
+  }
   .card {
     width: 22%;
     background-color: #2A263E;
