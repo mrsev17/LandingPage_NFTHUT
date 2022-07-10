@@ -46,6 +46,11 @@ body {
     border-bottom: 1px solid $accent-color;
   }
 }
+.active-link {
+    color: $accent-color !important;
+    transition: $regular-transition;
+    border-bottom: 1px solid $accent-color;
+}
 .navbar-toggler {
   background: linear-gradient(106deg, rgba(77,11,167,1) 2%, rgba(76,80,223,1) 44%, rgba(184,8,224,1) 92%);
   border: none !important;
