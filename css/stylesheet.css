@@ -546,14 +546,17 @@ body {
   margin: 0 auto;
   border-radius: 12px;
   border: none;
+  /*
   width: 24rem;
+
+   */
   background: #2A263E;
   transition: transform 2s ease-out 0.5s;
 }
 .category .card:hover {
   background: linear-gradient(106deg, rgb(77, 11, 167) 14%, rgb(76, 80, 223) 44%, rgb(184, 8, 224) 92%);
   transition: 0.5s;
-  transform: scale(1.05);
+  transform: scale(1.1);
 }
 .category .card:hover h2 {
   color: black;
