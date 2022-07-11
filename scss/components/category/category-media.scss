@@ -58,6 +58,9 @@
       width: 90%;
       margin: 0 auto;
     }
+    &__wrapper-glob {
+      margin-top: 20px;
+    }
   }
 }
 
@@ -72,6 +75,15 @@
     }
     &__card-title {
       font-size: 18px;
+    }
+  }
+}
+
+@media (max-width: 490px) {
+  .category {
+    .card {
+      width: 80%;
+      margin: 0 auto;
     }
   }
 }

@@ -1,0 +1,29 @@
+.marketplace {
+  margin-top: 150px;
+  &__wrapper {
+    justify-content: flex-start;
+    gap: 96px;
+  }
+  &__title-case > h2 {
+    margin-top: 40px;
+    font-size: 44px;
+    font-weight: $font-weight-text;
+    color: $title-color;
+  }
+  &__text-case > p {
+    margin-top: 24px;
+    font-size: $font-regular-text;
+    font-weight: $font-weight-small;
+    color: $text-color-second;
+    max-width: 427px;
+  }
+  &__button-case {
+    margin-top: 60px;
+  }
+  &__button-case > a {
+    font-size: 28px !important;
+    padding: 1.280rem 4.75rem !important;
+    border-radius: 30px !important;
+  }
+
+}

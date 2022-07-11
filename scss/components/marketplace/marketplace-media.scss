@@ -1,0 +1,21 @@
+@media (max-width: 992px) {
+  .marketplace {
+    margin-top: 60px;
+    &__wrapper {
+      flex-direction: column;
+      align-items: center;
+      gap: 40px;
+    }
+    &__title-case > h2 {
+      text-align: center;
+    }
+    &__text-case > p {
+      text-align: center;
+      margin: 0 auto;
+    }
+    &__button-case {
+      margin: 60px auto 0;
+      text-align: center;
+    }
+  }
+}

@@ -1,6 +1,5 @@
 .featured {
   margin-top: 100px;
-  padding-bottom: 150px;
   &__title {
     font-size: $font-regular-title;
     color: $title-color;
@@ -59,7 +58,9 @@
     width: 100%;
     position: absolute;
     z-index: 20;
+    /*
     display: nonee;
+     */
     top: 70%;
     left: 20%;
     background-color: rgba(110, 122, 92, 0);
