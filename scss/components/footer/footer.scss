@@ -1,0 +1,71 @@
+.footer {
+  margin-top: 180px;
+  padding-bottom: 100px;
+  &__title {
+    font-size: $font-weight-title;
+    font-weight: $font-weight-text;
+    color: $title-color;
+  }
+  &__description {
+    margin-top: 30px;
+    max-width: 760px;
+    font-size: $font-regular-text;
+    color: $text-color-second;
+  }
+  &__left-title {
+    color: $title-color;
+    font-size: 24px;
+    font-weight: $font-weight-text;
+  }
+  &__mid-title {
+    color: $title-color;
+    font-weight: $font-weight-text;
+    /*
+    text-align: center;
+
+     */
+    font-size: 24px;
+  }
+  &__right-title {
+    color: $title-color;
+    font-weight: $font-weight-text;
+    /*
+    text-align: end;
+
+     */
+    font-size: 24px;
+  }
+  &__wrapper-links {
+    margin-top: 20px;
+    ul {
+      padding-left: 0;
+      flex-direction: column;
+      gap: 10px;
+      li > a {
+        color: $text-color-second;
+        &:hover {
+          transition: .5s;
+          color: $accent-color;
+        }
+      }
+    }
+  }
+  &__mid-links {
+
+  }
+  &__left-links {
+
+  }
+  &__general-content {
+    margin-top: 60px;
+    gap: 148px;
+  }
+  &__bellow-part {
+    margin-top: 90px;
+    border-top: 1px solid $text-color-second;
+  }
+  &__bottom-description {
+    margin-top: 30px;
+    color: $text-color-second;
+  }
+}

@@ -1,0 +1,41 @@
+@media (max-width: 992px) {
+  .footer {
+    &__title,
+    &__description {
+      text-align: center;
+      margin: 30px auto 0;
+    }
+    &__general-content {
+      gap: 30px;
+      flex-direction: column;
+      align-items: center;
+    }
+    &__left-title,
+    &__mid-title,
+    &__right-title {
+      text-align: center;
+    }
+    &__left-links,
+    &__mid-links,
+    &__right-links {
+      text-align: center;
+    }
+    &__bottom-description {
+      text-align: center;
+    }
+  }
+}
+@media (max-width: 1180px) {
+  .footer {
+    &__general-content {
+      gap: 0;
+    }
+  }
+}
+@media (max-width: 1280px) {
+  .footer {
+    &__general-content {
+      gap: 0;
+    }
+  }
+}
