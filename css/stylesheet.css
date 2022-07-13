@@ -1100,7 +1100,7 @@ body {
     margin: 30px auto 0;
   }
   .footer__general-content {
-    gap: 30px;
+    gap: 30px !important;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
